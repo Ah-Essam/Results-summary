@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --container-radios: 35px;
+  --margin-bot: 15px;
+  --radios:25px;
+}
+body {
+  font-family: "Hanken Grotesk";
+}
+@media (min-width: 768px)  {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.the-container {
+  background-color: hsl(0, 0%, 100%);
+  margin-bottom: var(--margin-bot);
+}
+@media (min-width: 768px)  {
+  .the-container {
+    width: 700px;
+    display: flex;
+    border-radius: var(--radios);
+    -webkit-border-radius: var(--radios);
+    -moz-border-radius: var(--radios);
+    -ms-border-radius: var(--radios);
+    -o-border-radius: var(--radios);
+    box-shadow: 50px 15px 30px hsl(221, 100%, 96%);
+    margin: var(--margin-bot);
+}
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-bottom-left-radius: var(--container-radios);
+  border-bottom-right-radius: var(--container-radios);
+  padding: 25px;
+}
+@media (min-width: 768px) {
+  .header-container {
+    border-radius: var(--radios);
+    -webkit-border-radius: var(--radios);
+    -moz-border-radius: var(--radios);
+    -ms-border-radius: var(--radios);
+    -o-border-radius: var(--radios);
+}
+}
+.header-container h2 {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+  margin-bottom: var(--margin-bot);
+}
+.header-container .circle {
+  background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  margin-bottom: var(--margin-bot);
+  height: 125px;
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+}
+.header-container .circle h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 50px;
+  margin: 25px 0 5px;
+}
+.header-container .circle p {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+}
+.header-container > h3 {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+  margin-bottom: var(--margin-bot);
+}
+.header-container > p {
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  margin-bottom: var(--margin-bot);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  padding: 30PX;
+}
+@media (min-width: 768px) {
+  .container {
+    min-width: 50%;
+    border-radius: var(--radios);
+    -webkit-border-radius: var(--radios);
+    -moz-border-radius: var(--radios);
+    -ms-border-radius: var(--radios);
+    -o-border-radius: var(--radios);
+}
+}
+.container > h3 {
+  font-size: 20px;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: var(--margin-bot);
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: var(--margin-bot)
+}
+.container .content:first-of-type {
+  background-color: hsla(0, 100%, 67%, 0.05); ;
+}
+.container .content:nth-of-type(2) {
+  background-color: hsla(39, 100%, 56%, .05);
+}
+.container .content:nth-of-type(3) {
+  background-color: hsla(166, 100%, 37%, .05);
+}
+.container .content:last-of-type {
+  background-color: hsla(234, 85%, 45%, .05);
+}
+.container .content .con-icon i {
+  margin-right: 15px;
+}
+.container .content .con-icon {
+  display: flex;
+}
+.content:first-of-type .con-icon {
+  color: hsl(0, 100%, 67%);;
+}
+.content:nth-of-type(2) .con-icon {
+  color: hsl(39, 100%, 56%);
+}
+.content:nth-of-type(3) .con-icon {
+  color: hsl(166, 100%, 37%);
+}
+.content:last-of-type .con-icon {
+  color: hsl(234, 85%, 45%);
+}
+.container .content > p {
+  color: hsl(241, 100%, 89%);
+}
+.container .content > p span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+.container button {
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  line-height: 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+@media (min-width: 768px) {
+  .container button:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+  }
+}
