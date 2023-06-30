@@ -22,8 +22,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/Ah-Essam/Results-summary.git)
+- Live Site URL: [live site URL](https://results-summary-ebon.vercel.app/)
 
 ## My process
 
